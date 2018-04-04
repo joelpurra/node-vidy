@@ -1,0 +1,59 @@
+{
+  "name": "vidy",
+  "version": "1.0.0",
+  "description": "Search, discover, watch, and share talking videos from the VIDY API, using the CLI or code.",
+  "main": "index.js",
+  "bin": {
+    "vidy": "./bin/vidy.js"
+  },
+  "directories": {
+    "lib": "./src/",
+    "example": "./example/"
+  },
+  "scripts": {
+    "test": "npm run --silent lint && echo \"Warning: no tests specified.\"",
+    "lint": "npm run --silent eslint",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelpurra/node-vidy.git"
+  },
+  "keywords": [
+    "vidy",
+    "vidy.com",
+    "api",
+    "video",
+    "clip",
+    "search"
+  ],
+  "author": {
+    "name": "Joel Purra",
+    "email": "mig@joelpurra.se",
+    "url": "https://joelpurra.com/"
+  },
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/joelpurra/node-vidy/issues"
+  },
+  "homepage": "https://github.com/joelpurra/node-vidy#readme",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "check-types": "^7.3.0",
+    "find-up": "^2.1.0",
+    "moment": "^2.22.0",
+    "yargs": "^11.0.0"
+  }
+}
