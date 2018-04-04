@@ -1,6 +1,6 @@
 {
   "name": "vidy",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Search, discover, watch, and share talking videos from the VIDY API, using the CLI or code.",
   "main": "index.js",
   "bin": {
