@@ -4,7 +4,8 @@
   "description": "Search, discover, watch, and share talking videos from the VIDY API, using the CLI or code.",
   "main": "index.js",
   "directories": {
-    "lib": "./src/"
+    "lib": "./src/",
+    "example": "./example/"
   },
   "scripts": {
     "test": "npm run --silent lint && echo \"Warning: no tests specified.\"",
