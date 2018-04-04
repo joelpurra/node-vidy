@@ -13,10 +13,39 @@ Search, discover, watch, and share talking videos from [VIDY](https://vidy.com/)
 - Uses the [VIDY API](https://api.vidy.com/).
 - The sandbox API makes it easy to get started:
   - Open access, no special authorization required.
+  - Preconfigured in the CLI tool.
   - Preconfigured in the code examples.
   - Uses a smaller dataset of VIDYs.
   - Rate limited to maximum 1 request per second.
 - Requires [Node.js](https://nodejs.org/) v6.0.0 or newer.
+
+
+
+## Command line usage
+
+For easy developer testing, use the `vidy` command line interface (CLI).
+
+Outputs JSON results from the VIDY API. See the [VIDY API documentation](https://api.vidy.com) for details regarding the return value format.
+
+CLI arguments, such as API access key id and key secret, can be pre-configured using a `~/.vidyrc` file containing the respective command line options as JSON key/value pairs.
+
+```shell
+# NOTE: install vidy for system-wide usage.
+npm install --global vidy
+
+# NOTE: show the CLI help.
+vidy --help
+
+# NOTE: a simple VIDY API query.
+vidy query "hello world"
+
+# NOTE: a simple VIDY API query.
+vidy search '{"q":"hello space","limits":[1],"types":["clips"],"files":["landscapeVideo240"]}'
+
+# Pass the output to for example `jq` for processing.
+# https://stedolan.github.io/jq/
+vidy query --limit 3 "hello everybody" | jq
+```
 
 
 

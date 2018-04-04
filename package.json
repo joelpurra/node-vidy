@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Search, discover, watch, and share talking videos from the VIDY API, using the CLI or code.",
   "main": "index.js",
+  "bin": {
+    "vidy": "./bin/vidy.js"
+  },
   "directories": {
     "lib": "./src/",
     "example": "./example/"
@@ -49,6 +52,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "check-types": "^7.3.0",
-    "moment": "^2.22.0"
+    "find-up": "^2.1.0",
+    "moment": "^2.22.0",
+    "yargs": "^11.0.0"
   }
 }
