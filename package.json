@@ -1,0 +1,37 @@
+{
+  "name": "vidy",
+  "version": "0.0.0",
+  "description": "Search, discover, watch, and share talking videos from the VIDY API, using the CLI or code.",
+  "main": "index.js",
+  "directories": {
+    "lib": "./src/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelpurra/node-vidy.git"
+  },
+  "keywords": [
+    "vidy",
+    "vidy.com",
+    "api",
+    "video",
+    "clip",
+    "search"
+  ],
+  "author": {
+    "name": "Joel Purra",
+    "email": "mig@joelpurra.se",
+    "url": "https://joelpurra.com/"
+  },
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/joelpurra/node-vidy/issues"
+  },
+  "homepage": "https://github.com/joelpurra/node-vidy#readme",
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
