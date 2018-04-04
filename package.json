@@ -7,7 +7,10 @@
     "lib": "./src/"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run --silent lint && echo \"Warning: no tests specified.\"",
+    "lint": "npm run --silent eslint",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",
@@ -33,5 +36,13 @@
   "homepage": "https://github.com/joelpurra/node-vidy#readme",
   "engines": {
     "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
