@@ -9,6 +9,14 @@
 
 Search, discover, watch, and share talking videos from [VIDY](https://vidy.com/) using the [VIDY API](https://api.vidy.com/).
 
+
+
+> ## ⚠️ This project has been archived
+>
+> No future updates are planned. Feel free to continue using it, but expect no support.
+
+
+
 - Built to ease VIDY integration and testing.
 - Uses the [VIDY API](https://api.vidy.com/).
 - The sandbox API makes it easy to get started:
